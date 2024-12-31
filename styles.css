@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    scroll-behavior: smooth;
+    background: rgb(42, 41, 40);
+    background: linear-gradient(
+        7deg,
+        rgba(215,176,138,1) 0%,
+        rgba(37,80,156,1) 100%,
+
+    );
+    cursor: none;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+h2{
+    font-weight: 900;
+}
+
+.title{
+    font-weight:bold;
+        font-size: 32px;
+        color: #eee;
+        letter-spacing: 1.5%;
+        line-height: 34px;
+        display: block
+
+}
+
+.ct{
+    font-weight: 400;
+        font-size: 18px;
+        color: #eee;
+        letter-spacing: 1.5%;
+        line-height: 34px;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.portfolio-item img:hover{
+    scale: 1.05;
+    transition: ease;
+    transition: 0.3s;
+}
+
+i{
+    font-size: 20px;
+}
+
+.logo {
+    position: fixed;
+    width: 180px;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.text-details {
+    position: fixed;
+    width: 50%;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.container{
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.dashboard {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 150vh;
+  z-index: 1;
+  display: block;
+}
+
+.dashboard-mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.whitespace{
+    width: 100%;
+    height: 165vh;;
+}
+
+.copy{
+    width: 70%;
+    margin: 32px auto;
+}
+
+
+
+
+.sc-3{
+    background-color: #DFFFDE;
+    padding: 84px 0 0 0;
+}
+.sc-4{
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+.explr-1{
+    background-color: #D4EAFF;
+
+}
+
+.card-case {
+    padding: 48px;
+    padding-bottom: 0px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    margin-bottom: 48px;
+  }
+
+  .container.card-case {
+    cursor: none !important;
+}
+
+/* Add this rule instead */
+.container.card-case {
+    cursor: pointer; /* or any other cursor style you prefer */
+}
+.card-contact{
+    background-color: #C2E4FF;
+    padding: 16px;
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    display: none; /* Initially hidden until JavaScript loads */
+  }
+  
+  .custom-cursor.visible {
+    display: block;
+  }
+  
+  .cursor-text {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    display: none; /* Initially hidden until JavaScript loads */
+  }
+  
+  .cursor-text.visible {
+    display: block;
+  }
+  
+  /* Remove default cursor when hovering the card */
+  .container.card-case {
+    cursor: none !important;
+  }
+
+  .text-image{
+    width: 100%;
+    color: white;
+    margin: auto auto;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    mix-blend-mode: overlay;
+    z-index: 999;
+  }
+
+  .portfolio-item{
+    margin-top: 24px;
+  }
+
+  .gallery{
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    background-color: inherit;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    overflow: auto;
+  }
+
+  .block{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #c0c0c0;
+    transform-style: preserve-3d;
+    transform: translateZ(1750px);
+    
+  }
+
+  .block1{
+    top: 30%;
+    left: 30%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block2{
+    top: 20%;
+    left: 50%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block3{
+    top: 60%;
+    left: 60%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block4{
+    top: 60%;
+    left: 60%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block5{
+    top: 30%;
+    left: 30%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block6{
+    top: 20%;
+    left: 50%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block7{
+    top: 60%;
+    left: 10%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block8{
+    top: 20%;
+    left: 50%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block9{
+    top: 40%;
+    left: 60%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block10{
+    top: 60%;
+    left: 40%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block11{
+    top: 20%;
+    left: 40%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block12{
+    top: 60%;
+    left: 25%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block13{
+    top: 20%;
+    left: 70%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block14{
+    top: 40%;
+    left: 10%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block15{
+    top: 60%;
+    left: 25%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block16{
+    top: 25%;
+    left: 25%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block17{
+    top: 50%;
+    left: 10%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block18{
+    top: 60%;
+    left: 40%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block19{
+    top: 60%;
+    left: 60%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block20{
+    top: 20%;
+    left: 50%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block21{
+    top: 20%;
+    left: 40%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .block22{
+    top: 40%;
+    left: 60%;
+    background: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  /* Custom CSS for styling the CTA section */
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta-heading {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.cta-btn {
+    margin-top: 24px;
+    border-radius: 36px;
+    font-size: 1.25rem;
+    padding: 12px 30px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  color: #6c757d;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+
+
+@media (max-width: 900px) {
+    
+    .dashboard {
+      display: none;
+    }
+    .dashboard-mobile {
+        display: block;
+    }
+
+    img#dashboard-img-mobile{
+      width: 100vw;
+    }
+
+    .logo {
+        width: 85px;
+        top: 10%;;
+    }
+
+    h1{
+        font-size: 52px;
+    }
+    
+    .title{
+        font-size: 18px;
+        line-height: 24px;
+    
+    }
+
+    .ct{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .text-details {
+        position: fixed;
+        width: 96%;
+        top: 25%;
+    }
+    
+
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .copy{
+        width: 86%;
+        margin: 16px auto;
+    }
+
+    .card-case{
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .whitespace{
+        width: 100%;
+        height: 135vh;;
+    }
+}
