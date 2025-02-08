@@ -29,7 +29,7 @@ h2{
 
 .title{
     font-weight:bold;
-        font-size: 32px;
+        font-size: 24px;
         color: #eee;
         letter-spacing: 1.5%;
         line-height: 34px;
@@ -113,6 +113,7 @@ i{
 .copy{
     width: 70%;
     margin: 32px auto;
+    margin-bottom: 120px;
 }
 
 
@@ -133,12 +134,12 @@ i{
 }
 
 .card-case {
-    padding: 48px;
-    padding-bottom: 0px;
+    /* padding: 48px;
+    padding-bottom: 0px; */
     border-radius: 24px;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     overflow: hidden;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
   }
 
   .container.card-case {
@@ -210,6 +211,8 @@ i{
 
   .portfolio-item{
     margin-top: 24px;
+    margin-bottom: 16px;
+    scale:0.95;
   }
 
   .gallery{
@@ -431,7 +434,7 @@ i{
     }
 
     .ct{
-        font-size: 18px;
+        font-size: 14px;
         line-height: 22px;
     }
 
@@ -454,12 +457,13 @@ i{
     .copy{
         width: 86%;
         margin: 16px auto;
+        margin-bottom: 120px;
     }
 
     .card-case{
         padding-top: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* padding-left: 16px;
+        padding-right: 16px; */
     }
 
     .whitespace{
