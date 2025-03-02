@@ -225,147 +225,67 @@ i{
     overflow: auto;
   }
 
-  .block{
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background-color: #c0c0c0;
-    transform-style: preserve-3d;
-    transform: translateZ(1750px);
-    
+  .stock-ticker {
+    font-size: 15px;
+    padding-block: 8px;
+    /* border-block: 1px solid; */
+    overflow: hidden;
+    user-select: none;
+  
+    --gap: 32px;
+    display: flex;
+    gap: var(--gap);
+  }
+  
+  .stock-ticker ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+  
+    animation: scroll 60s linear infinite;
+  }
+  
+  .stock-ticker:hover ul {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  .stock-ticker ul:first-child {
+    /* background-color: yellow; */
+  }
+  
+  .stock-ticker ul:last-child {
+    /* background-color: pink; */
+  }
+  
+  .stock-ticker .company,
+  .stock-ticker .price {
+    font-weight: bold;
+  }
+  
+  .stock-ticker .price {
+    margin-inline: 4px;
+  }
+  
+  
+
+  .portfolio-exploration{
+    width: 600px;
+    border-radius: 24px;
+
   }
 
-  .block1{
-    top: 30%;
-    left: 30%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block2{
-    top: 20%;
-    left: 50%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block3{
-    top: 60%;
-    left: 60%;
-    background: url("/assets/ImageBlock/3.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block4{
-    top: 60%;
-    left: 60%;
-    background: url("/assets/ImageBlock/4.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block5{
-    top: 30%;
-    left: 30%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block6{
-    top: 20%;
-    left: 50%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block7{
-    top: 60%;
-    left: 10%;
-    background: url("/assets/ImageBlock/3.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block8{
-    top: 20%;
-    left: 50%;
-    background: url("/assets/ImageBlock/4.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block9{
-    top: 40%;
-    left: 60%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block10{
-    top: 60%;
-    left: 40%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block11{
-    top: 20%;
-    left: 40%;
-    background: url("/assets/ImageBlock/3.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block12{
-    top: 60%;
-    left: 25%;
-    background: url("/assets/ImageBlock/4.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block13{
-    top: 20%;
-    left: 70%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block14{
-    top: 40%;
-    left: 10%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block15{
-    top: 60%;
-    left: 25%;
-    background: url("/assets/ImageBlock/3.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block16{
-    top: 25%;
-    left: 25%;
-    background: url("/assets/ImageBlock/4.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block17{
-    top: 50%;
-    left: 10%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block18{
-    top: 60%;
-    left: 40%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block19{
-    top: 60%;
-    left: 60%;
-    background: url("/assets/ImageBlock/3.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block20{
-    top: 20%;
-    left: 50%;
-    background: url("/assets/ImageBlock/4.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block21{
-    top: 20%;
-    left: 40%;
-    background: url("/assets/ImageBlock/1.png") no-repeat 50% 50%;
-    background-size: cover;
-  }
-  .block22{
-    top: 40%;
-    left: 60%;
-    background: url("/assets/ImageBlock/2.png") no-repeat 50% 50%;
-    background-size: cover;
+  .portfolio-exploration.image{
+    border-radius: 8px;;
   }
 
   /* Custom CSS for styling the CTA section */
