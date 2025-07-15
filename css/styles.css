@@ -51,6 +51,8 @@ img{
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
+    will-change: transform;
+    position: relative;
 }
 
 .portfolio-item img:hover{
@@ -80,6 +82,7 @@ i{
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+    
 }
 
 .container{
@@ -87,6 +90,123 @@ i{
     height: 100%;
 
 }
+
+.text-wrapper p{
+  font-size: 7rem;
+  text-align: center;
+  color: #eee;
+
+  &:nth-child(5) {
+    color: #D7B08A;
+  }
+}
+
+/* slider */
+.container-slider{
+  width: 100%;
+  height: 1000vh;
+}
+
+.active-slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgb(42, 41, 40);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.active-slide img {
+  position: absolute;
+  filter: blur(4px);
+  /* transform: scale(1.124); */
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 1200px;;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide-copy p{
+  /* text-transform: uppercase; */
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 150%;
+  color: #eee;
+  text-decoration: none;
+}
+
+.slide-copy p:hover{
+  text-decoration: none;
+}
+
+.slide-copy p#index{
+  font-family: "Montserrat", serif;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 0.75em;
+  color: #eee;
+}
+
+#slide-1{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+  opacity: 0;
+}
+
+#slide-2{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+  opacity: 0;
+}
+
+#slide-3{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+  opacity: 0;
+}
+
+#slide-4{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-1000px);
+  opacity: 0.5;
+}
+
+#slide-5{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%) translateZ(0px);
+  opacity: 1;
+}
+
+
+
 
 .dashboard {
   position: fixed;
@@ -107,7 +227,8 @@ i{
 
 .whitespace{
     width: 100%;
-    height: 165vh;;
+    height: 70vh;;
+    /* background-color: royalblue; */
 }
 
 .copy{
@@ -393,5 +514,13 @@ i{
     .cta-section {
       padding-left: 16px;
       padding-right: 16px;;
+  }
+
+  .intro h1, .outro h1 {
+      width: 100%;
+  }
+
+  .card-content .card-description {
+      width: 90%;
   }
 }

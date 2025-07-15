@@ -41,6 +41,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        
 
         
         <title>Ayyathullah Ahmad</title>
@@ -53,7 +54,7 @@
                     <img src="assets/photo-ayyat.png" alt="">
                 </div>
                 <div class="text-details">
-                    <h1>AYYAT</h1>
+                    <h1 id="text-reveal" >AYYAT</h1>
                     <p style="line-height: 18px;">Product Designer with 4+ years experiences of building end-to-end web and app products, 
                         Learning experienced at Apple Developer Academy.</p>
                 </div>
@@ -73,7 +74,71 @@
 
                 <div class="web-content">
                     <div class="whitespace"></div>
-                    <div class="copy">
+                    <div class="container-slider d-none d-lg-block ">
+                        <div class="active-slide">\
+                            <img src="assets/img4 - COMING SOON.webp" alt="">
+                            <img src="assets/img2.webp" alt="">
+                            <img src="assets/img1.webp" alt="">  
+                            <img src="assets/Homepage/DesignProcess/img4- Homepage.webp " alt="">    
+                            <img src="assets/img2.webp" alt="">  
+                        </div>
+
+                        <div class="slider">
+                            <a href="/caseStudy/CreateAccount.html"  class="slide" id="slide-1" role="button" aria-pressed="true">
+                                <div class="slide-copy">
+                                    <p>NalaGenetics Homepage Revamp</p>
+                                    <p id="index">Revamping homepage to better reflect Nala’s branding and increase purchase conversions—while also educating and building trust with users.</p>
+                                </div>
+                                <div class="slide-img">
+                                    <img src="assets/Homepage/DesignProcess/img4- Homepage.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="/caseStudy/Nutri.html"  class="slide" id="slide-2" role="button" aria-pressed="true">
+                                <div class="slide-copy">
+                                    <p>Personal Nutrient in Mobile App</p>
+                                    <p id="index">Helping users access their nutrition data more easily on the NalaGenetics App</p>
+                                </div>
+                                <div class="slide-img">
+                                    <img src="assets/img2.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="/caseStudy/CreateAccount.html"  class="slide" id="slide-3" role="button" aria-pressed="true">
+                                <div class="slide-copy">
+                                    <p>Clinical Dashboard Improvement</p>
+                                    <p id="index">Improving Effectiveness Creating Accounts on the Dashboard</p>
+                                </div>
+                                <div class="slide-img">
+                                    <img src="assets/img1.webp" alt="">
+                                </div>
+                            </a>
+                            <a href=" /caseStudy/Homepage.html"  class="slide" id="slide-4" role="button" aria-pressed="true">
+                                <div class="slide-copy">
+                                    <p>NalaGenetics Homepage Revamp</p>
+                                    <p id="index">Revamping dashboard with shcn ui design system for improved user experience and efficiency</p>
+                                </div>
+                                <div class="slide-img">
+                                    <img src="assets/Homepage/DesignProcess/img4- Homepage.webp" alt="">
+                                </div>
+                            </a>
+                            <a href="/caseStudy/Nutri.html"  class="slide" id="slide-5" role="button" aria-pressed="true">
+                                <div class="slide-copy">
+                                    <p>Personal Nutrient in Mobile App</p>
+                                    <p id="index">Revamping homepage to better reflect Nala’s branding and increase purchase conversions—while also educating and building trust with users.</p>
+                                </div>
+                                <div class="slide-img">
+                                    <img src="assets/img2.webp" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+                    <div class="copy d-md-block d-lg-none">
                         <h4 class="text-light ">Selected Work</h4>
                         <div class="row ">
                             <div class="col-lg-6">
@@ -291,7 +356,10 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" ></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" ></script> 
-        <script src="script.js" ></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js" ></script> 
+        <script type="module" src="/js/script.js" ></script> 
+        <script  src="/js/card.js" ></script> 
+        <!-- <script type="module" src="/js/marquee.js"></script> -->
 
     </body>
 
@@ -302,6 +370,11 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
             trigger: ".section1",
             start: "top top", 
-            end: "50% top",
+            end: "20% top",
             scrub: 1,
         }
     })
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
     // Add hover effects for all card-case elements
-    const cardCases = document.querySelectorAll('.container.card-case');
+    const cardCases = document.querySelectorAll('.slide');
     
     if (cardCases.length > 0) {
       cardCases.forEach(cardCase => {
@@ -289,4 +289,6 @@ modal.onclick = function() {
        img01.className = "modal-content";
      }, 400);
 }
+
+
 
